@@ -205,11 +205,15 @@
       position: absolute;
       inset: 0;
       z-index: -2;
-      background:
-        radial-gradient(circle at 12% 0%, rgba(56,189,248,0.35) 0, transparent 55%),
-        linear-gradient(to bottom, rgba(2,6,23,0.15), rgba(2,6,23,0.85)),
-        url("hero-skyline.jpg") center/cover no-repeat;
-      filter: saturate(1.15) contrast(1.05);
+      overflow: hidden;
+      background: #020617;
+    }
+
+    .hero-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.18) contrast(1.05);
     }
 
     .hero-overlay {
@@ -917,7 +921,7 @@
   <header>
     <div class="wrapper nav">
       <a href="#top" class="logo" aria-label="Riyal Capital home">
-        <!-- Use your lion logo image here -->
+        <!-- Lion logo image -->
         <img src="logo-lion.png" alt="Riyal Capital lion logo" class="logo-img" />
         <div>
           <div class="logo-text-main">Riyal Capital</div>
@@ -928,7 +932,7 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#track-record">Track record</a></li>
+          <li><a href="#track-record">Track Record</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#pricing">Fees</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -946,7 +950,12 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Video background – name your video file hero-background.mp4 -->
+      <div class="hero-bg" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="hero-background.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="wrapper hero-grid">
@@ -972,13 +981,13 @@
             </button>
           </div>
           <p class="hero-note">
-            We keep the first call simple: understand your mandate, current efforts and 6–12 month objectives, then
-            decide together whether it makes sense to proceed.
+            We keep the first call simple: understand your mandate, current efforts and six-to-twelve-month objectives,
+            then decide together whether it makes sense to proceed.
           </p>
 
           <div class="hero-meta">
             <div>
-              <strong>$100M+</strong>
+              <strong>$100m+</strong>
               transactions supported across funds and private mandates
             </div>
             <div>
@@ -1036,9 +1045,9 @@
           <div class="section-label">About Riyal Capital</div>
           <h2 class="section-title">A distribution engine for sophisticated capital.</h2>
           <p class="section-description">
-            Riyal Capital began alongside one of Vancouver’s largest investment banks, supporting more than
-            $100 million in private transactions. Today we specialise in raising capital and originating deals for
-            managers and companies that require institutional-grade distribution, not just more introductions.
+            Riyal Capital began alongside a major investment bank in Vancouver, supporting more than
+            one hundred million dollars in private transactions. Today we specialise in raising capital and originating
+            deals for managers and companies that require institutional-grade distribution, not just more introductions.
           </p>
         </div>
 
@@ -1050,7 +1059,7 @@
               serious data infrastructure and the capacity to run campaigns at a scale most investment banks do not touch.
             </p>
             <ul>
-              <li>More than 4,000 personal institutional contacts globally.</li>
+              <li>More than four thousand personal institutional contacts globally.</li>
               <li>Particular depth across the Middle East and Asia, with strong coverage in North America and Europe.</li>
               <li>Software built over major data providers, plus in-house datasets for mandate-level targeting.</li>
               <li>AI- and machine-learning-assisted list building and continual refinement.</li>
@@ -1102,8 +1111,8 @@
               liquidity and fee profile.
             </p>
             <ul>
-              <li>Structured discovery around fund structure, AUM, track record and fee model.</li>
-              <li>Access to our institutional network and a curated list of up to 50,000 targeted LPs.</li>
+              <li>Structured discovery around fund structure, assets under management, track record and fee model.</li>
+              <li>Access to our institutional network and a curated list of up to fifty thousand targeted LPs.</li>
               <li>Daily outbound through an investor relations team using phone and direct email.</li>
               <li>Pre-qualification, meeting coordination and assistance through due diligence and negotiation.</li>
             </ul>
@@ -1126,7 +1135,7 @@
               <li>Support across negotiations, due diligence and transaction execution.</li>
             </ul>
             <div class="solution-footer">
-              <span>Used to support platforms such as North Star Equity Partners.</span>
+              <span>Used to support mid-market private equity platforms in multiple regions.</span>
               <span class="badge">Private equity</span>
             </div>
           </article>
@@ -1139,8 +1148,8 @@
             </p>
             <ul>
               <li>Initial outreach to investors who have funded similar transactions.</li>
-              <li>Expanded campaigns to 10,000–20,000+ targeted investors across regions.</li>
-              <li>Sector-driven positioning, from clean technology to semiconductors and beyond.</li>
+              <li>Expanded campaigns to ten-to-twenty thousand targeted investors across regions.</li>
+              <li>Sector-driven positioning, from clean technology to industrials and beyond.</li>
               <li>Meeting scheduling, pitch preparation and negotiation support.</li>
             </ul>
             <div class="solution-footer">
@@ -1156,7 +1165,7 @@
     <section id="track-record">
       <div class="wrapper">
         <div class="section-header">
-          <div class="section-label">Selected outcomes</div>
+          <div class="section-label">Track Record</div>
           <h2 class="section-title">Experience across funds and private mandates.</h2>
           <p class="section-description">
             Members of the Riyal Capital team have supported mandates from clean technology to industrial
@@ -1167,37 +1176,37 @@
         <div class="track-grid">
           <article class="deal-card">
             <div class="deal-label">Private equity</div>
-            <h3 class="deal-title">North Star Equity Partners</h3>
+            <h3 class="deal-title">Mid-market buyout platform</h3>
             <div class="deal-amount">More than $200m in exit value supported</div>
             <p class="deal-meta">
-              Delivered a consistent flow of otherwise unattainable deals within their target mandate, contributing to
-              transactions totalling over two hundred million dollars in exit value.
+              Delivered a consistent flow of otherwise unattainable deals within a defined buyout mandate,
+              contributing to transactions totalling over two hundred million dollars in exit value.
             </p>
           </article>
 
           <article class="deal-card">
             <div class="deal-label">Clean technology</div>
-            <h3 class="deal-title">Sky H2O</h3>
+            <h3 class="deal-title">Utility-scale water technology company</h3>
             <div class="deal-amount">More than $100m in investor interest</div>
             <p class="deal-meta">
-              Supported a United States-based atmospheric water technology company, with particular traction among
-              investors in the Middle East where the thesis is especially relevant.
+              Supported a United States-based clean technology business with a focus on water infrastructure,
+              generating institutional interest particularly among Middle Eastern investors.
             </p>
           </article>
 
           <article class="deal-card">
             <div class="deal-label">Cross-border transaction</div>
-            <h3 class="deal-title">Semiconductor facility</h3>
-            <div class="deal-amount">$32m manufacturing transaction</div>
+            <h3 class="deal-title">Asian semiconductor manufacturing facility</h3>
+            <div class="deal-amount">$32m industrial transaction</div>
             <p class="deal-meta">
-              Assisted in a thirty-two million dollar semiconductor manufacturing deal in Malaysia with a Shanghai-based
+              Assisted in a thirty-two million dollar semiconductor manufacturing deal in Asia with a strategic
               investor group, aligning complex cross-border requirements.
             </p>
           </article>
 
           <article class="deal-card">
             <div class="deal-label">Hedge fund</div>
-            <h3 class="deal-title">Early-stage technology fund</h3>
+            <h3 class="deal-title">Technology-focused hedge fund manager</h3>
             <div class="deal-amount">$100m in new limited partner commitments</div>
             <p class="deal-meta">
               Helped an early-stage technology-focused manager onboard five institutional investors, with an average
@@ -1207,11 +1216,11 @@
 
           <article class="deal-card">
             <div class="deal-label">Investment banking</div>
-            <h3 class="deal-title">Vancouver private transactions</h3>
+            <h3 class="deal-title">Canadian private transactions</h3>
             <div class="deal-amount">More than $100m in completed deals</div>
             <p class="deal-meta">
-              Before focusing on funds and capital raises, the team worked alongside one of Vancouver’s largest
-              investment banks on over one hundred million dollars of private business transactions.
+              Before focusing on funds and capital raises, the team worked on over one hundred million dollars of
+              private business transactions alongside a major Canadian investment bank.
             </p>
           </article>
 
